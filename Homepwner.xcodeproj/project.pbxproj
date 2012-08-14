@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1544113415DB176B005208C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1544113315DB176B005208C2 /* UIKit.framework */; };
+		1544113615DB176B005208C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1544113515DB176B005208C2 /* Foundation.framework */; };
+		1544113815DB176B005208C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1544113715DB176B005208C2 /* CoreGraphics.framework */; };
+		1544113E15DB176B005208C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1544113C15DB176B005208C2 /* InfoPlist.strings */; };
+		1544114015DB176B005208C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544113F15DB176B005208C2 /* main.m */; };
+		1544114415DB176B005208C2 /* HomepwnerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544114315DB176B005208C2 /* HomepwnerAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1544112F15DB176B005208C2 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1544113315DB176B005208C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1544113515DB176B005208C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1544113715DB176B005208C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1544113B15DB176B005208C2 /* Homepwner-Info.plist */ = {isa = PBXFileReference; path = "Homepwner-Info.plist"; sourceTree = "<group>"; };
+		1544113D15DB176B005208C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1544113F15DB176B005208C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1544114115DB176B005208C2 /* Homepwner-Prefix.pch */ = {isa = PBXFileReference; path = "Homepwner-Prefix.pch"; sourceTree = "<group>"; };
+		1544114215DB176B005208C2 /* HomepwnerAppDelegate.h */ = {isa = PBXFileReference; path = HomepwnerAppDelegate.h; sourceTree = "<group>"; };
+		1544114315DB176B005208C2 /* HomepwnerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1544112C15DB176B005208C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1544113415DB176B005208C2 /* UIKit.framework in Frameworks */,
+				1544113615DB176B005208C2 /* Foundation.framework in Frameworks */,
+				1544113815DB176B005208C2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1544112415DB176B005208C2 = {
+			isa = PBXGroup;
+			children = (
+				1544113915DB176B005208C2 /* Homepwner */,
+				1544113215DB176B005208C2 /* Frameworks */,
+				1544113015DB176B005208C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1544113015DB176B005208C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1544112F15DB176B005208C2 /* Homepwner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1544113215DB176B005208C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1544113315DB176B005208C2 /* UIKit.framework */,
+				1544113515DB176B005208C2 /* Foundation.framework */,
+				1544113715DB176B005208C2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1544113915DB176B005208C2 /* Homepwner */ = {
+			isa = PBXGroup;
+			children = (
+				1544114215DB176B005208C2 /* HomepwnerAppDelegate.h */,
+				1544114315DB176B005208C2 /* HomepwnerAppDelegate.m */,
+				1544113A15DB176B005208C2 /* Supporting Files */,
+			);
+			path = Homepwner;
+			sourceTree = "<group>";
+		};
+		1544113A15DB176B005208C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1544113B15DB176B005208C2 /* Homepwner-Info.plist */,
+				1544113C15DB176B005208C2 /* InfoPlist.strings */,
+				1544113F15DB176B005208C2 /* main.m */,
+				1544114115DB176B005208C2 /* Homepwner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1544112E15DB176B005208C2 /* Homepwner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1544114715DB176B005208C2 /* Build configuration list for PBXNativeTarget "Homepwner" */;
+			buildPhases = (
+				1544112B15DB176B005208C2 /* Sources */,
+				1544112C15DB176B005208C2 /* Frameworks */,
+				1544112D15DB176B005208C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Homepwner;
+			productName = Homepwner;
+			productReference = 1544112F15DB176B005208C2 /* Homepwner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1544112615DB176B005208C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Homepwner;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "CBM of America";
+			};
+			buildConfigurationList = 1544112915DB176B005208C2 /* Build configuration list for PBXProject "Homepwner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1544112415DB176B005208C2;
+			productRefGroup = 1544113015DB176B005208C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1544112E15DB176B005208C2 /* Homepwner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1544112D15DB176B005208C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1544113E15DB176B005208C2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1544112B15DB176B005208C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1544114015DB176B005208C2 /* main.m in Sources */,
+				1544114415DB176B005208C2 /* HomepwnerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1544113C15DB176B005208C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1544113D15DB176B005208C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1544114515DB176B005208C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1544114615DB176B005208C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1544114815DB176B005208C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homepwner/Homepwner-Prefix.pch";
+				INFOPLIST_FILE = "Homepwner/Homepwner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1544114915DB176B005208C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homepwner/Homepwner-Prefix.pch";
+				INFOPLIST_FILE = "Homepwner/Homepwner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1544112915DB176B005208C2 /* Build configuration list for PBXProject "Homepwner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1544114515DB176B005208C2 /* Debug */,
+				1544114615DB176B005208C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1544114715DB176B005208C2 /* Build configuration list for PBXNativeTarget "Homepwner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1544114815DB176B005208C2 /* Debug */,
+				1544114915DB176B005208C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1544112615DB176B005208C2 /* Project object */;
+}
