@@ -16,7 +16,7 @@
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 10; i++) {
             [[BNRItemStore sharedStore] createItem];
         }
     }
@@ -29,18 +29,24 @@
     return [[[BNRItemStore sharedStore] allItems] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)getCellForTableView:(UITableView *)tableView
 {
-    UITableViewCell *cell = 
-        [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     
     if (!cell) {
         cell = [[UITableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:@"UITableViewCell"];
     }
-    
+    return cell;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [self getCellForTableView:tableView];
+
     BNRItem *item = [[[BNRItemStore sharedStore] allItems]
                      objectAtIndex:[indexPath row]];
     
