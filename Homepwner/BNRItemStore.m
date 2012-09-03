@@ -45,4 +45,9 @@
     return newItem;
 }
 
+- (void)removeItem:(BNRItem *)item
+{
+    [allItems removeObjectIdenticalTo:item];
+}
+
 @end

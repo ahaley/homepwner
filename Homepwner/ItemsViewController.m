@@ -16,9 +16,6 @@
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        for (int i = 0; i < 5; i++) {
-            [[BNRItemStore sharedStore] createItem];
-        }
     }
     return self;
 }
@@ -104,5 +101,18 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView
+    commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+    forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        BNRItemStore *store = [BNRItemStore sharedStore];
+        NSArray *items = [store allItems];
+        BNRItem *deleteItem = [items objectAtIndex:[indexPath row]];
+        [store removeItem:deleteItem];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                         withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
 
 @end
