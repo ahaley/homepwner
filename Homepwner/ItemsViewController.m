@@ -23,6 +23,16 @@
     return self;
 }
 
+- (UIView *)headerView
+{
+    if (!headerView) {
+        [[NSBundle mainBundle] loadNibNamed:@"HeaderView"
+                                      owner:self
+                                    options:nil];
+    }
+    return headerView;
+}
+
 - (int)tableView:(UITableView *)tableView
     numberOfRowsInSection:(NSInteger)section
 {
@@ -55,9 +65,37 @@
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [self headerView];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return [[self headerView] bounds].size.height;
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     return [self init];
 }
+
+- (IBAction)addNewItem:(id)sender
+{
+    
+}
+
+- (IBAction)toggleEditingMode:(id)sender
+{
+    if ([self isEditing]) {
+        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+        [self setEditing:NO animated:YES];
+    }
+    else {
+        [sender setTitle:@"Done" forState:UIControlStateNormal];
+        [self setEditing:YES animated:YES];
+    }
+}
+
 
 @end
