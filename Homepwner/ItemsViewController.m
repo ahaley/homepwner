@@ -16,7 +16,7 @@
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             [[BNRItemStore sharedStore] createItem];
         }
     }
@@ -81,8 +81,15 @@
 }
 
 - (IBAction)addNewItem:(id)sender
-{
+{    
+    BNRItem *newItem = [[BNRItemStore sharedStore] createItem];
     
+    int lastRow = [[[BNRItemStore sharedStore] allItems] indexOfObject:newItem];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:lastRow inSection:0];
+    
+    [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                            withRowAnimation:UITableViewRowAnimationTop];
 }
 
 - (IBAction)toggleEditingMode:(id)sender
