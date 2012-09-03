@@ -50,4 +50,15 @@
     [allItems removeObjectIdenticalTo:item];
 }
 
+- (void)moveItemAtIndex:(int)from
+                toIndex:(int)to
+{
+    if (from == to)
+        return;
+    BNRItem *moveItem = [allItems objectAtIndex:from];
+    [allItems removeObjectAtIndex:from];
+    [allItems insertObject:moveItem atIndex:to];
+}
+
+
 @end
