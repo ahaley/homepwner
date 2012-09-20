@@ -17,6 +17,8 @@
 		1544114F15DB1E98005208C2 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544114E15DB1E98005208C2 /* BNRItem.m */; };
 		1544115215DB1FF1005208C2 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544115115DB1FF1005208C2 /* BNRItemStore.m */; };
 		15D5E55A15F51775001294FC /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D5E55915F51775001294FC /* HeaderView.xib */; };
+		15D5E56315F54725001294FC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D5E56115F54725001294FC /* DetailViewController.m */; };
+		15D5E56415F54725001294FC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D5E56215F54725001294FC /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		1544115015DB1FF1005208C2 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		1544115115DB1FF1005208C2 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 		15D5E55915F51775001294FC /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		15D5E56015F54725001294FC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		15D5E56115F54725001294FC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		15D5E56215F54725001294FC /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +91,12 @@
 				1544113A15DB176B005208C2 /* Supporting Files */,
 				1544114215DB176B005208C2 /* HomepwnerAppDelegate.h */,
 				1544114315DB176B005208C2 /* HomepwnerAppDelegate.m */,
-				15D5E55915F51775001294FC /* HeaderView.xib */,
+				15D5E56015F54725001294FC /* DetailViewController.h */,
+				15D5E56115F54725001294FC /* DetailViewController.m */,
+				15D5E56215F54725001294FC /* DetailViewController.xib */,
 				1544114A15DB1B66005208C2 /* ItemsViewController.h */,
 				1544114B15DB1B66005208C2 /* ItemsViewController.m */,
+				15D5E55915F51775001294FC /* HeaderView.xib */,
 				1544114D15DB1E98005208C2 /* BNRItem.h */,
 				1544114E15DB1E98005208C2 /* BNRItem.m */,
 				1544115015DB1FF1005208C2 /* BNRItemStore.h */,
@@ -162,6 +170,7 @@
 			files = (
 				1544113E15DB176B005208C2 /* InfoPlist.strings in Resources */,
 				15D5E55A15F51775001294FC /* HeaderView.xib in Resources */,
+				15D5E56415F54725001294FC /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				1544114C15DB1B66005208C2 /* ItemsViewController.m in Sources */,
 				1544114F15DB1E98005208C2 /* BNRItem.m in Sources */,
 				1544115215DB1FF1005208C2 /* BNRItemStore.m in Sources */,
+				15D5E56315F54725001294FC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

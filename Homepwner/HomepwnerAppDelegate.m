@@ -17,8 +17,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    ItemsViewController *controller = [[ItemsViewController alloc] init];
-    [[self window] setRootViewController:controller];
+    ItemsViewController *itemsController = [[ItemsViewController alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc]
+                                             initWithRootViewController:itemsController];
+    
+    
+    [[self window] setRootViewController:navController];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
