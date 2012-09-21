@@ -129,4 +129,14 @@
     return @"Remove";
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController *detailController = [[DetailViewController alloc] init];
+  
+    BNRItem *item = [[[BNRItemStore sharedStore] allItems] objectAtIndex:[indexPath row]];
+    [detailController setItem:item];
+    
+    [[self navigationController] pushViewController:detailController animated:TRUE];
+}
+
 @end
